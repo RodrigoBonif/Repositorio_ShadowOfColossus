@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tudo" id="app">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <nav class="borda-verde"> 
+        <div class="logo"></div>
+        <h1 class="titulo cor-verde-claro">Shadow Of The Colossus</h1>
+        <div class="mudar">
+            <div class="icone-tema" :class="{'icone-mudar': mudar}" @click="mudar = !mudar">
+            </div>
+        </div>
+    </nav>
+    <main :class="mudar ? 'dark' : 'light'">
+        <div class="container">
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box um"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Valus</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Valus é o apelido dado ao primeiro colosso do jogo. É diretamente encontrado ao sul do <span class="cor-verde-claro">Santuário de Adoração </span>, ele fica em uma área plana acima de um penhasco, apenas alcançada subindo este mesmo penhasco.
+                </p>
+                </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box dois"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Quadratus é o nome dado por fãs ao segundo colosso. O colosso é um dos principais mascotes de Shadow of the Colossus, aparecendo na maioria das fotos promocionais e propagandas para o jogo. Ele tem 24 metros de altura e 32 metros de comprimento e vive no quadrante F3.</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box tres"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Gaius é o 3° Colosso do jogo. É um dos cinco colossos bípedes, e um dos três que usam armas. Gaius tem 24 metros de altura e vive no quadrante E2.</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box quatro"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Phaedra é o quarto colosso do jogo e também é fêmea, localizado abaixo de uma colina com uma forte névoa e vive no quadrante G5. Ele tem 25 metros de altura e 23 de comprimento.</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box cinco"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Avion é o 5º colosso e o primeiro com a capacidade de voar. Tem 35 metros de uma ponta da cauda até a outra ponta e 28 metros de largura e vive no quadrante H4.</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box seis"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Barba é o 6º colosso e um dos mais fáceis de derrotar. Ele se parece com Valus e Argus. Apesar de ser aparentemente igual aos colossos citados, sua forma de escalar é diferente, pois, como Argus, não possui pelos na perna para fornecer a subida. Possui 21 metros de altura e é o maior colosso Minotauro e vive no quadrante D6.</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box sete"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Hydrus é o 7° Colosso do jogo. Ele nos traz algo totalmente novo, que são a sua aparência e local de combate. Hydrus é uma espécie de enguia em todas as suas características, onde nosso desafio agora é enfrentá-lo na água. Ao longo de seu corpo são identificados três apêndices dorsais luminosos que emitem descargas elétricas na água, tornando o desafio mais perigoso. Hydrus tem 70 metros de comprimento sendo assim o 2º maior colosso serpente e vive no quadrante D1, na arena chamada Lakeside.</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box oito"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box nove"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box dez"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box onze"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box doze"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box treze"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box quatorze"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'esquerda' : 'direita'">
+                <div class="img-box quinze"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+            <div class="box-conteudo" :class="mudar ? 'direita' : 'esquerda'">
+                <div class="img-box dezesseis"></div>
+                <div class="column">
+                <h1 class="titulo cor-verde-claro">Titã</h1>
+                <p class="texto-tita" :class="mudar ? 'texto-branco' : 'texto-tita'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequatur repellendus ad quibusdam tempora ratione dolorem omnis consectetur</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer></footer>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                mudar: false
+            }
+        })
+    </script>
+</body>
+
+</html>
